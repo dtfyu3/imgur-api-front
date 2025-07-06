@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const uploadArea = document.querySelector('.upload-area');
     const apiKeyInput = document.getElementById('apiKeyInput');
     const keyBtn = document.getElementById('keyBtn');
-    const token = window.localStorage.getItem('token');
+    let token = window.localStorage.getItem('token');
 
 
     if (token) {
