@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (token) {
         apiKeyInput.style.display = 'none';
-        keyBtn.textContent = '🔒';
+        keyBtn.innerHTML = '<i class="fa-solid fa-eraser"></i>';
     }
     else {
         apiKeyInput.style.display = 'block';
