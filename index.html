@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imgur Uploader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <h1><i class="fas fa-cloud-upload-alt"></i> Imgur Uploader</h1>
+    <p>Загрузите изображение на Imgur</p>
+
+    <div class="api-key-container">
+        <input type="password" id="apiKeyInput" placeholder="Введите ваш Imgur Client-ID">
+        <button class="key-btn" id="keyBtn" title="Вставить API ключ">
+            <i class="fas fa-key"></i>
+        </button>
+    </div>
+
+    <div class="upload-area">
+        <div class="file-input-wrapper">
+            <button class="file-input-btn">
+                <i class="fas fa-folder-open"></i> Выбрать файл
+            </button>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <p class="drag-text"><i class="fas fa-arrows-alt"></i> или перетащите изображение сюда</p>
+        <img id="preview" alt="Предпросмотр">
+    </div>
+
+    <button id="uploadBtn" disabled>
+        <i class="fas fa-upload"></i> Загрузить на Imgur
+    </button>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
